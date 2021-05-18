@@ -4,7 +4,7 @@
     <div class="">
       <ul>
         <li> <h1>{{ $elem['title'] }} </h1></li>
-        <li>{{ $elem['thumb'] }}</li>
+        <li><img src="{{ asset($elem['thumb']) }}" alt=""></li>
         <li><p>{{ $elem['description'] }}</p></li>
         <li>Price: <strong>{{ $elem['price'] }}</strong></li>
         <li>Series: {{ $elem['series'] }}</li>
