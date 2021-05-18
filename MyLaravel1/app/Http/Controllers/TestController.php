@@ -241,7 +241,7 @@ class TestController extends Controller
               ],
           ],
       ];
-      $elem($films[$index]);
+      $elem = $films[$index];
       return view('pages.elements', compact('elem'));
     }
     public function home(){
@@ -458,6 +458,6 @@ class TestController extends Controller
                 ],
             ],
         ];
-      return view('pages.home', compact('data', 'films'));
+      return view('pages.home', compact('films'));
     }
 }

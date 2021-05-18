@@ -1,22 +1,15 @@
 @extends('layouts.main-layout')
 @section('content')
   <h1>Hello world</h1>
-  {{-- <ul>
-    @foreach ($data as $dat)
-      <li> {{ $dat['name'] }} --> {{ $dat['rating'] }} </li>
-    @endforeach
-  </ul> --}}
     <div class="">
       <ul>
-        <li> <h1>{{ $film['title'] }} </h1></li>
-        <li>{{ $film['thumb'] }}</li>
-        <li><p>{{ $film['description'] }}</p></li>
-        <li>Price: <strong>{{ $film['price'] }}</strong></li>
-        <li>Series: {{ $film['series'] }}</li>
-        <li>Sales date: {{ $film['sale_date'] }}</li>
-        <li>{{ $film['type'] }}</li>
-        {{-- <li>{{ $film['artists'] }}</li>
-        <li>{{ $film['writers'] }}</li> --}}
+        <li> <h1>{{ $elem['title'] }} </h1></li>
+        <li>{{ $elem['thumb'] }}</li>
+        <li><p>{{ $elem['description'] }}</p></li>
+        <li>Price: <strong>{{ $elem['price'] }}</strong></li>
+        <li>Series: {{ $elem['series'] }}</li>
+        <li>Sales date: {{ $elem['sale_date'] }}</li>
+        <li>{{ $elem['type'] }}</li>
       </ul>
     </div>
 @endsection

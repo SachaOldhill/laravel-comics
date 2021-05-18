@@ -6,14 +6,13 @@
       <li> {{ $dat['name'] }} --> {{ $dat['rating'] }} </li>
     @endforeach
   </ul> --}}
-  <div class="">
+  {{-- <div class="">
     @foreach ($data as $d)
       <a href="{{ route('elem',$loop -> index) }}">
         {{ $d['name']}}
       </a>
-    </div>
-
     @endforeach
+  </div> --}}
   @foreach ($films as $film)
     <div class="">
       <ul>
