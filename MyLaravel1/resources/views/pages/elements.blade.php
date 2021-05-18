@@ -6,22 +6,9 @@
       <li> {{ $dat['name'] }} --> {{ $dat['rating'] }} </li>
     @endforeach
   </ul> --}}
-  <div class="">
-    @foreach ($data as $d)
-      <a href="{{ route('elem',$loop -> index) }}">
-        {{ $d['name']}}
-      </a>
-    </div>
-
-    @endforeach
-  @foreach ($films as $film)
     <div class="">
       <ul>
-        <li>
-          <a href="{{ route('elem', $loop->index) }}">
-            <h1>{{ $film['title'] }}</h1>
-          </a>
-        </li>
+        <li> <h1>{{ $film['title'] }} </h1></li>
         <li>{{ $film['thumb'] }}</li>
         <li><p>{{ $film['description'] }}</p></li>
         <li>Price: <strong>{{ $film['price'] }}</strong></li>
@@ -32,5 +19,4 @@
         <li>{{ $film['writers'] }}</li> --}}
       </ul>
     </div>
- @endforeach
 @endsection

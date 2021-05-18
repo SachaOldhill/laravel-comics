@@ -27,6 +27,24 @@ class TestController extends Controller
       $name = 'Sacha Collevecchio';
       return view('testview', compact('name', 'recs', 'data'));
     }
+    public function elements($index){
+      $elem($data[$index]);
+      $data = [
+            [
+                'name' => "Nome 1",
+                'rating' => 7
+            ],
+            [
+                'name' => "Nome 2",
+                'rating' => 5
+            ],
+            [
+                'name' => "Nome 3",
+                'rating' => 10
+            ]
+        ];
+      return view('pages.elements', compact('elem'));
+    }
     public function home(){
       $data = [
             [

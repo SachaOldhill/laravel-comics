@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('test', 'TestController@testPage');
 
 Route::get('home', 'TestController@home');
+
+Route::get('/elem/{index}', 'TestController@elements')
+      -> name('elem');
